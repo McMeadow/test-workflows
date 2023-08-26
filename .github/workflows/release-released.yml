@@ -1,0 +1,10 @@
+name: release released dummy workflow
+on:
+  release:
+    types: [released]
+
+jobs:
+  doesthistrigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo yes it triggers
